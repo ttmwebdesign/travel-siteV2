@@ -1,0 +1,33 @@
+/* converted to flexbox, cuz floats are silly */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  &--gutters {
+    margin-right: -65px;
+  }
+  &--gutters > div {
+    padding-right: 65px;
+  }
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin atMedium {
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+    &__col-4 {
+      width: 33.33%;
+    }
+    &__col-4-larger {
+      width: 37%;
+    }
+    &__col-8 {
+      width: 66.66%;
+    }
+    &__col-8-smaller {
+      width: 63%;
+    }
+  }
+}
