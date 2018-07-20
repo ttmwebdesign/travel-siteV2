@@ -564,7 +564,7 @@ a {
     color: white;
   }
 
-/* converted to flexbox, cuz floats are silly */
+/* converted to flexbox */
 
 .row {
   display: -webkit-box;
@@ -617,7 +617,7 @@ a {
 
 .generic-content-container p {
     line-height: 1.65;
-    margin: 1.8rem 0;
+    margin: 0 0 1.8rem 0;
     font-weight: 300;
   }
 
@@ -633,26 +633,94 @@ a {
   }
 
 .section-title {
-  font-size: 3.75rem;
+  font-size: 2.55rem;
   font-weight: 300;
   text-align: center;
 }
+
+@media (min-width: 530px) {
+
+.section-title {
+    font-size: 3.75rem
+}
+  }
 
 .section-title strong {
     font-weight: 500;
   }
 
 .section-title__icon {
-    margin-right: .5rem;
+    display: block;
+    margin: 0 auto .6rem;
+  }
+
+@media (min-width: 530px) {
+
+.section-title__icon {
+      margin: 0 .5rem 0 0;
+      display: inline-block
+  }
   }
 
 .feature-item {
-  padding-left: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 2.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
 }
 
+@media (min-width: 530px) {
+
+.feature-item {
+    padding-left: 24px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start
+
+}
+  }
+
+@media (min-width: 530px) {
+
 .feature-item__icon {
-    position: absolute;
-    left: 0;
+      position: relative;
+      left: 0;
+      top: 35px
+  }
+  }
+
+.feature-item__text-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 20px;
+  }
+
+.feature-item__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: .7em auto .8rem;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__title {
+      font-size: 1.875rem;
+      margin-top: 1em;
+      margin: 1em 0 .8rem
+  }
   }
 

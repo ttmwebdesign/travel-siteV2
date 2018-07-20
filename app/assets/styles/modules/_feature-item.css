@@ -1,15 +1,35 @@
 .feature-item {
   display: flex;
-  background-color: yellow !important;
-  padding-left: 94px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 2.25rem;
+  justify-content: center;
+  @mixin atSmall {
+    padding-left: 24px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
   &__icon {
-    position: absolute;
-    left: 0;
+    @mixin atSmall {
+      position: relative;
+      left: 0;
+      top: 35px;
+    }
+  }
+  &__text-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
   }
   &__title {
-    font-size; 1.875rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    margin-bottom: .8rem;
+    margin: .7em auto .8rem;
+    @mixin atSmall {
+      font-size: 1.875rem;
+      margin-top: 1em;
+      margin: 1em 0 .8rem;
+    }
   }
 
 }
