@@ -9,17 +9,29 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
+
   &__icon {
+    display: block;
+
     @mixin atSmall {
+      position: absolute;
+      top: 0;
+      left: 18px;
+      /*
       position: relative;
       left: 0;
-      top: 35px;
+      top: 35px; */
     }
   }
   &__text-block {
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
+    @mixin atSmall {
+      padding-left: 86px;
+      padding-bottom: 20px;
+      margin-top: -30px;
+    }
   }
   &__title {
     font-size: 1.6rem;
