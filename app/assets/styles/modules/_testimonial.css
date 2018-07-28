@@ -3,7 +3,7 @@
   padding: 0 18px 1px;
   margin: 80px 0 18px;
 
-  @mixin atLarge {
+  @mixin atMedium {
     padding: 0 1.8125rem 1px;
     margin-bottom: 0;
   }
