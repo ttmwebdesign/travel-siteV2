@@ -72,10 +72,12 @@
         display: flex;
       }
     }
-  }  /*
+  }
   &--equal-height-at-large {
-    & > div  {
-      display: flex;
+    @mixin atLarge {
+      & > div  {
+        display: flex;
+      }
     }
-  }  */
+  }
 }
